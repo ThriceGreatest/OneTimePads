@@ -6,10 +6,12 @@ Then, generate a key of specificied length by executing, "./keygen [LENGTH] > [n
 
 Next, you must setup both the encryption and decryption servers using the following commands:
  "./enc_server [PORT1] &"
+         and
  "./dec_server [PORT2] &" 
  **choose different ports. PORT1 != PORT2**
  
 Finally, you can encrypt or decrypt a plaintext file using the following commands:
   "./enc_client [plaintext] [keyfile] [PORT1]"
+           or
   "./dec_client [ciphertext] [keyfile] [PORT2]"
  
